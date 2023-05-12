@@ -1,0 +1,242 @@
+2023-05-07 21:57:57.1424||ERROR|Program|System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitDisposeCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2023-05-07 22:44:33.5292||ERROR|Program|System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitDisposeCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2023-05-07 22:50:23.5024||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 22:50:23.5994||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-07 22:50:23.8511||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:1 subscriber id:5 amount:234 loan type:Simple Loan 
+2023-05-07 22:50:23.8511||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:2 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-07 22:50:45.5382||ERROR|Program|System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitDisposeCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2023-05-07 22:51:06.2032||ERROR|Program|System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitDisposeCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2023-05-07 22:51:22.8294||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 22:51:22.9384||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-07 22:51:23.2320||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:1 subscriber id:5 amount:234 loan type:Simple Loan 
+2023-05-07 22:51:23.2320||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:2 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-07 22:51:50.8753||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 22:51:51.0189||INFO|LoanService.Services.LoanService|request received: Get Loan By Id: loan id:1 
+2023-05-07 22:51:51.3701||INFO|LoanService.Services.LoanService|response replied: Loan successfully get: loan id:1 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-07 22:53:26.5907||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 22:53:26.6983||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-07 22:53:27.0378||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:1 subscriber id:5 amount:234 loan type:Simple Loan 
+2023-05-07 22:53:27.0378||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:2 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-07 22:53:32.2157||ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'LoanService.LoanDb'.
+Microsoft.EntityFrameworkCore.DbUpdateException: Required properties '{'loan_type'}' are missing for the instance of entity type 'LoanModel'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the entity key value.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.ThrowNullabilityErrorException(IUpdateEntry entry, IList`1 nullabilityErrors)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Create(IUpdateEntry entry, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: Required properties '{'loan_type'}' are missing for the instance of entity type 'LoanModel'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the entity key value.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.ThrowNullabilityErrorException(IUpdateEntry entry, IList`1 nullabilityErrors)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Create(IUpdateEntry entry, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-05-07 22:54:28.6457||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 22:54:28.7424||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-07 22:54:58.2452||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 22:54:58.3678||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-07 22:54:58.6160||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:1 subscriber id:5 amount:234 loan type:Simple Loan 
+2023-05-07 22:54:58.6160||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:2 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-07 22:55:04.6004||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 22:55:04.7032||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-07 22:55:04.9857||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:1 subscriber id:0 amount:0 loan type:Simple Loan 
+2023-05-07 22:55:43.8988||ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'LoanService.LoanDb'.
+Microsoft.EntityFrameworkCore.DbUpdateException: Required properties '{'loan_type'}' are missing for the instance of entity type 'LoanModel'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the entity key value.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.ThrowNullabilityErrorException(IUpdateEntry entry, IList`1 nullabilityErrors)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Create(IUpdateEntry entry, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: Required properties '{'loan_type'}' are missing for the instance of entity type 'LoanModel'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the entity key value.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.ThrowNullabilityErrorException(IUpdateEntry entry, IList`1 nullabilityErrors)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Create(IUpdateEntry entry, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-05-07 22:56:17.2495||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 22:56:17.3280||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-07 22:56:17.5818||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:1 subscriber id:0 amount:0 loan type: 
+2023-05-07 22:58:45.1861||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 22:58:45.3788||INFO|LoanService.Services.LoanService|request received: Get Loan By Id: loan id:1 
+2023-05-07 22:58:45.8034||INFO|LoanService.Services.LoanService|response replied: Loan successfully get: loan id:1 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-07 22:58:46.0761||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 22:58:46.0993||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-07 22:58:46.1347||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:1 subscriber id:5 amount:234 loan type:Simple Loan 
+2023-05-07 22:58:46.1347||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:2 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-07 22:58:46.2339||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 22:58:46.2407||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-07 22:59:08.7628||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 22:59:08.8650||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-07 22:59:47.3841||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 22:59:47.5977||INFO|LoanService.Services.LoanService|request received: Get Loan By Id: loan id:2 
+2023-05-07 22:59:48.0737||INFO|LoanService.Services.LoanService|response replied: Loan not found 
+2023-05-07 23:00:18.7929||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 23:00:18.9078||INFO|LoanService.Services.LoanService|request received: Get Loan By Id: loan id:2 
+2023-05-07 23:00:19.2413||INFO|LoanService.Services.LoanService|response replied: Loan not found 
+2023-05-07 23:00:19.8139||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 23:00:20.0532||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 23:00:20.0532||INFO|LoanService.Services.LoanService|request received: Get Loan By Id: loan id:1 
+2023-05-07 23:00:20.2058||INFO|LoanService.Services.LoanService|response replied: Loan successfully get: loan id:1 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-07 23:00:20.3640||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 23:00:20.3835||INFO|LoanService.Services.LoanService|request received: Delete Loan: loan id:1 
+2023-05-07 23:00:23.7328||ERROR|LoanService.LoanServiceHelper|No such host is known. (subscriber:5000) 
+2023-05-07 23:00:23.7328||ERROR|LoanService.Services.LoanService|No such host is known. (subscriber:5000) 
+2023-05-07 23:00:23.8631||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 23:00:26.5751||ERROR|LoanService.Services.LoanService|No such host is known. (subscriber:5000) 
+2023-05-07 23:00:26.6530||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 23:00:26.6530||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-07 23:00:26.6847||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:1 subscriber id:5 amount:234 loan type:Simple Loan 
+2023-05-07 23:00:26.6847||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:2 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-07 23:00:26.7124||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 23:00:29.8276||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-07 23:00:29.9192||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 23:00:29.9283||INFO|LoanService.Services.LoanService|request received: Get Amount By Id: loan id:1 
+2023-05-07 23:00:29.9564||INFO|LoanService.Services.LoanService|response replied: Amount successfully get: amount:234 
+2023-05-07 23:00:30.0024||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 23:00:30.0024||INFO|LoanService.Services.LoanService|request received: Delete Loan: loan id:1 
+2023-05-07 23:00:32.7483||ERROR|LoanService.LoanServiceHelper|No such host is known. (subscriber:5000) 
+2023-05-07 23:00:32.7483||ERROR|LoanService.Services.LoanService|No such host is known. (subscriber:5000) 
+2023-05-07 23:01:59.6542||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-07 23:01:59.7924||INFO|LoanService.Services.LoanService|request received: Get Loan By Id: loan id:2 
+2023-05-07 23:02:00.1599||INFO|LoanService.Services.LoanService|response replied: Loan not found 

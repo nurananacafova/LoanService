@@ -1,0 +1,315 @@
+2023-05-03 15:37:20.4658||ERROR|Program|System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitDisposeCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2023-05-03 15:37:20.5890||ERROR|Program|System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitDisposeCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2023-05-03 15:37:20.6077||ERROR|Program|System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitDisposeCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2023-05-03 15:37:20.6237||ERROR|Program|System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitDisposeCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2023-05-03 15:37:20.6678||ERROR|Program|System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitDisposeCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2023-05-03 15:37:20.6877||ERROR|Program|System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitDisposeCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2023-05-03 15:37:20.7155||ERROR|Program|System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitDisposeCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2023-05-03 15:37:20.7327||ERROR|Program|System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitDisposeCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2023-05-03 15:37:20.7531||ERROR|Program|System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.) (Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.Services.ILoanService Lifetime: Transient ImplementationType: LoanService.Services.LoanService': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitDisposeCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LoanService.ILoanServiceHelper Lifetime: Singleton ImplementationType: LoanService.LoanServiceHelper': Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LoanService.LoanDb' from singleton 'LoanService.ILoanServiceHelper'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+

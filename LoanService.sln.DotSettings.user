@@ -1,0 +1,16 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=afa96ba9_002D7289_002D4e89_002D8cb7_002D8c3d29b252e2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;LoanServiceUnit.Tests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;Project Location="C:\Users\lcadmin\RiderProjects\LoanService\LoanServiceUnit.Tests" Presentation="&amp;lt;LoanServiceUnit.Tests&amp;gt;" /&gt;&#xD;
+    &lt;And&gt;&#xD;
+      &lt;Namespace&gt;LoanServiceIntegration.Tests&lt;/Namespace&gt;&#xD;
+      &lt;Project Location="C:\Users\lcadmin\RiderProjects\LoanService\LoanServiceIntegration.Tests" Presentation="&amp;lt;LoanServiceIntegration.Tests&amp;gt;" /&gt;&#xD;
+    &lt;/And&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bec4e383_002D02b0_002D412a_002D8c41_002D0f213e25a484/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="IntegrationTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::7C1E7D15-C12F-4C51-A125-1D9DC0332EC9::net7.0::LoanServiceIntegration.Tests.System.IntegrationTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	</wpf:ResourceDictionary>

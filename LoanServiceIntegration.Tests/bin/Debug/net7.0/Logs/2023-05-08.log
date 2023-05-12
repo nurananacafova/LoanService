@@ -1,0 +1,198 @@
+2023-05-08 10:34:19.5767||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 10:34:19.6942||INFO|LoanService.Services.LoanService|request received: Get Amount By Id: loan id:1 
+2023-05-08 10:34:20.0948||INFO|LoanService.Services.LoanService|response replied: Amount successfully get: amount:234 
+2023-05-08 10:36:17.9665||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 10:36:18.0926||INFO|LoanService.Services.LoanService|request received: Get Loan By Id: loan id:1 
+2023-05-08 10:36:18.4534||INFO|LoanService.Services.LoanService|response replied: Loan successfully get: loan id:1 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-08 10:44:42.9990||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 10:44:46.2743||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 10:47:25.6502||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 10:47:25.7637||INFO|LoanService.Services.LoanService|request received: Get Loan By Id: loan id:1 
+2023-05-08 10:47:26.1478||INFO|LoanService.Services.LoanService|response replied: Loan successfully get: loan id:1 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-08 10:47:26.5989||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 10:47:26.7810||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 10:47:26.7918||INFO|LoanService.Services.LoanService|request received: Delete Loan: loan id:1 
+2023-05-08 10:47:29.7346||ERROR|LoanService.LoanServiceHelper|No such host is known. (subscriber:5000) 
+2023-05-08 10:47:29.7346||ERROR|LoanService.Services.LoanService|No such host is known. (subscriber:5000) 
+2023-05-08 10:47:29.8612||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 10:47:32.6076||ERROR|LoanService.Services.LoanService|No such host is known. (subscriber:5000) 
+2023-05-08 10:47:32.7235||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 10:47:32.7235||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-08 10:47:32.7546||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:1 subscriber id:5 amount:234 loan type:Simple Loan 
+2023-05-08 10:47:32.7546||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:2 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-08 10:47:32.9471||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 10:47:35.7553||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 10:47:35.8726||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 10:47:35.8842||INFO|LoanService.Services.LoanService|request received: Get Amount By Id: loan id:1 
+2023-05-08 10:47:35.9236||INFO|LoanService.Services.LoanService|response replied: Amount successfully get: amount:234 
+2023-05-08 10:47:36.0032||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 10:47:36.0032||INFO|LoanService.Services.LoanService|request received: Delete Loan: loan id:1 
+2023-05-08 10:47:39.7833||ERROR|LoanService.LoanServiceHelper|No such host is known. (subscriber:5000) 
+2023-05-08 10:47:39.7833||ERROR|LoanService.Services.LoanService|No such host is known. (subscriber:5000) 
+2023-05-08 10:54:00.0979||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 10:54:03.2446||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 10:59:05.9235||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 10:59:09.0628||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 11:00:15.3762||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 11:00:18.5212||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 11:03:46.9700||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 11:03:51.0675||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 11:04:00.3971||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 11:04:03.4276||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 11:04:28.4752||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 11:04:31.6345||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 11:12:26.7581||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 11:12:29.8694||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 11:35:28.9129||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 11:35:32.2558||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 11:35:57.7663||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 11:36:00.8944||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 11:45:44.2532||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 11:45:47.4195||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 11:46:03.4011||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 11:46:06.5824||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 11:46:27.4259||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 11:46:30.8072||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 16:50:51.4023||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 16:50:51.4743||INFO|LoanService.Services.LoanService|request received: Get Loan By Id: loan id:1 
+2023-05-08 16:50:51.6543||INFO|LoanService.Services.LoanService|response replied: Loan successfully get: loan id:1 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-08 16:50:51.9272||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 16:50:52.1068||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 16:50:54.9375||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 16:50:54.9826||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 16:50:57.6758||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 16:50:57.7282||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 16:50:57.7282||INFO|LoanService.Services.LoanService|request received: Delete Loan: loan id:1 
+2023-05-08 16:51:00.5454||ERROR|LoanService.LoanServiceHelper|No such host is known. (subscriber:5000) 
+2023-05-08 16:51:00.5454||ERROR|LoanService.Services.LoanService|No such host is known. (subscriber:5000) 
+2023-05-08 16:51:00.5650||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 16:51:03.2425||ERROR|LoanService.Services.LoanService|No such host is known. (subscriber:5000) 
+2023-05-08 16:51:03.2980||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 16:51:03.3030||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-08 16:51:03.3030||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:1 subscriber id:5 amount:234 loan type:Simple Loan 
+2023-05-08 16:51:03.3030||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:2 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-08 16:51:03.3398||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 16:51:03.3398||INFO|LoanService.Services.LoanService|request received: Get Amount By Id: loan id:1 
+2023-05-08 16:51:03.3557||INFO|LoanService.Services.LoanService|response replied: Amount successfully get: amount:234 
+2023-05-08 16:51:03.3938||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 16:51:03.3938||INFO|LoanService.Services.LoanService|request received: Delete Loan: loan id:1 
+2023-05-08 16:51:06.0925||ERROR|LoanService.LoanServiceHelper|No such host is known. (subscriber:5000) 
+2023-05-08 16:51:06.0925||ERROR|LoanService.Services.LoanService|No such host is known. (subscriber:5000) 
+2023-05-08 16:56:42.5177||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 16:56:45.5104||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:05:10.2931||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:05:13.4071||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:05:42.1563||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:05:45.1176||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:05:59.6306||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:06:02.5944||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:06:34.7854||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:06:37.7531||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:08:00.1556||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:08:03.2356||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:09:30.7425||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:09:33.6787||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:09:52.2829||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:09:55.2918||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:16:01.7377||ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'LoanService.LoanDb'.
+Microsoft.EntityFrameworkCore.DbUpdateException: Required properties '{'loan_type'}' are missing for the instance of entity type 'LoanModel'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the entity key value.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.ThrowNullabilityErrorException(IUpdateEntry entry, IList`1 nullabilityErrors)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Create(IUpdateEntry entry, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: Required properties '{'loan_type'}' are missing for the instance of entity type 'LoanModel'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the entity key value.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.ThrowNullabilityErrorException(IUpdateEntry entry, IList`1 nullabilityErrors)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Create(IUpdateEntry entry, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-05-08 17:16:20.2152||ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'LoanService.LoanDb'.
+Microsoft.EntityFrameworkCore.DbUpdateException: Required properties '{'loan_type'}' are missing for the instance of entity type 'LoanModel'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the entity key value.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.ThrowNullabilityErrorException(IUpdateEntry entry, IList`1 nullabilityErrors)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Create(IUpdateEntry entry, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: Required properties '{'loan_type'}' are missing for the instance of entity type 'LoanModel'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the entity key value.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.ThrowNullabilityErrorException(IUpdateEntry entry, IList`1 nullabilityErrors)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Create(IUpdateEntry entry, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-05-08 17:17:05.9019||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:17:05.9562||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-08 17:18:30.2359||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:18:30.3046||INFO|LoanService.Services.LoanService|request received: Get Loan By Id: loan id:2 
+2023-05-08 17:18:30.4638||INFO|LoanService.Services.LoanService|response replied: Loan not found 
+2023-05-08 17:18:53.7546||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:18:53.8324||INFO|LoanService.Services.LoanService|request received: Get Loan By Id: loan id:1 
+2023-05-08 17:18:54.0217||INFO|LoanService.Services.LoanService|response replied: Loan successfully get: loan id:1 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-08 17:27:16.5809||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:27:19.5761||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:31:30.8743||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:31:33.8309||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:33:32.9012||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:33:35.9669||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:39:01.6718||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:39:01.8136||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-08 17:39:10.0382||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:39:10.1658||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-08 17:40:42.5923||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:40:42.6439||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-08 17:40:42.7746||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:1 subscriber id:5 amount:234 loan type:Simple Loan 
+2023-05-08 17:40:42.7746||INFO|LoanService.Services.LoanService|response replied: Loans successfully get: loan id:2 subscriber id:6 amount:234 loan type:Simple Loan 
+2023-05-08 17:41:29.3792||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:41:29.5089||INFO|LoanService.Services.LoanService|request received. Get All Loans 
+2023-05-08 17:42:30.4537||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:42:30.5261||INFO|LoanService.Services.LoanService|request received: Delete Loan: loan id:1 
+2023-05-08 17:42:33.5876||ERROR|LoanService.LoanServiceHelper|No such host is known. (subscriber:5000) 
+2023-05-08 17:42:33.5876||ERROR|LoanService.Services.LoanService|No such host is known. (subscriber:5000) 
+2023-05-08 17:42:45.1229||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:42:45.1847||INFO|LoanService.Services.LoanService|request received: Delete Loan: loan id:88 
+2023-05-08 17:42:45.3334||INFO|LoanService.Services.LoanService|response replied: Data not found 
+2023-05-08 17:42:45.3334||ERROR|LoanService.Services.LoanService|Loan not found 
+2023-05-08 17:48:01.3895||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:48:04.3732||ERROR|LoanService.Services.LoanService|No such host is known. (subscriber:5000) 
+2023-05-08 17:49:01.6771||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:49:04.6284||ERROR|LoanService.Services.LoanService|No such host is known. (subscriber:5000) 
+2023-05-08 17:51:03.6857||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:51:06.7314||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:51:25.3990||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:51:28.3893||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:52:09.4474||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:52:12.4451||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:52:26.5516||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:52:29.5739||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:52:52.2412||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:52:55.2618||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:53:56.6873||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:53:59.6295||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:54:23.1118||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:54:26.0996||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 17:59:56.2480||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 17:59:59.2396||ERROR|LoanService.Services.LoanService|No such host is known. (scoringservice:5004) 
+2023-05-08 18:01:01.6810||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 18:05:39.5206||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 18:05:49.2354||INFO|LoanService.Services.LoanService|request received: Delete Loan: loan id:32453 
+2023-05-08 18:05:49.4819||INFO|LoanService.Services.LoanService|response replied: Data not found 
+2023-05-08 18:05:49.5215||ERROR|LoanService.Services.LoanService|Loan not found 
+2023-05-08 18:06:15.5825||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 18:06:26.1151||INFO|LoanService.Services.LoanService|request received: Delete Loan: loan id:32453 
+2023-05-08 18:06:35.4343||INFO|LoanService.Services.LoanService|response replied: Data not found 
+2023-05-08 18:06:40.3418||ERROR|LoanService.Services.LoanService|Loan not found 
+2023-05-08 18:08:08.5208||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 18:08:08.6055||INFO|LoanService.Services.LoanService|request received: Delete Loan: loan id:32453 
+2023-05-08 18:08:08.7824||INFO|LoanService.Services.LoanService|response replied: Data not found 
+2023-05-08 18:08:08.7831||ERROR|LoanService.Services.LoanService|Loan not found 
+2023-05-08 18:08:44.0017||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-05-08 18:08:44.0773||INFO|LoanService.Services.LoanService|request received: Delete Loan: loan id:32453 
+2023-05-08 18:08:44.2595||INFO|LoanService.Services.LoanService|response replied: Data not found 
+2023-05-08 18:08:44.2595||ERROR|LoanService.Services.LoanService|Loan not found 
+2023-05-08 18:09:14.3673||WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 

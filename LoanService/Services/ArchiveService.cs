@@ -1,5 +1,9 @@
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using LoanService.Model;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace LoanService.Services;
 

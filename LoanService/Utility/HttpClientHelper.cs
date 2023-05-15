@@ -1,4 +1,8 @@
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
 using LoanService.Model;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 namespace LoanService;

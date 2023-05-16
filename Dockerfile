@@ -1,0 +1,1 @@
+﻿FROM nurananajafova/loanservice:v1

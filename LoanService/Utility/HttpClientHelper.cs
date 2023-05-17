@@ -13,9 +13,9 @@ public class HttpClientHelper : IHttpClientHelper
     // private readonly Uri _subscriberServiceUrl = new Uri("http://subscriber:5000/api/Subscribers/GetSubscriber/");
     // private readonly Uri _scoringServiceUrl = new Uri("http://scoringservice:5004/api/ScoringService/ScoreSubscriber/");
     // private readonly Uri _responseServiceUrl = new Uri("http://responseservice:5001/api/Mail/SendMail");
-    private readonly Uri _subscriberServiceUrl = new Uri("http://localhost:5000/api/Subscribers/GetSubscriber/");
-    private readonly Uri _scoringServiceUrl = new Uri("http://localhost:5004/api/ScoringService/ScoreSubscriber/");
-    private readonly Uri _responseServiceUrl = new Uri("http://localhost:5001/api/Mail/SendMail");
+    private readonly Uri _subscriberServiceUrl = new Uri("https://nurananacafova-subscriberservice.nativeci.app/api/Subscribers/GetSubscriber/");
+    private readonly Uri _scoringServiceUrl = new Uri("https://nurananacafova-scoringservice.nativeci.app/api/ScoringService/ScoreSubscriber/");
+    private readonly Uri _responseServiceUrl = new Uri("https://nurananacafova-responseservice.nativeci.app/api/Mail/SendMail");
     private readonly ILogger<HttpClientHelper> _logger;
 
     public HttpClientHelper(ILogger<HttpClientHelper> logger)

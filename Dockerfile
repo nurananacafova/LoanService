@@ -27,7 +27,7 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 #COPY ["LoanServiceIntegration.Tests/LoanServiceIntegration.Tests.csproj", "LoanServiceIntegration.Tests/"]
 COPY ["LoanService/LoanService.csproj", "LoanService/"]
-RUN dotnet restore "LoanServices/LoanService.csproj"
+RUN dotnet restore "LoanService/LoanService.csproj"
 COPY . .
 WORKDIR "/src/LoanService"
 RUN dotnet build "LoanService.csproj" -c Release -o /app/build

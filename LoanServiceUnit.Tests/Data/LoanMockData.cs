@@ -56,7 +56,7 @@ public class LoanMockData
     {
         return new ProvideLoanRequest()
         {
-            id = 1,
+            // id = 1,
             subscriberId = 1,
             Amount = 234,
             loan_type = "Simple Loan"

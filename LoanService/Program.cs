@@ -33,7 +33,7 @@ try
     app.UseHttpsRedirection();
 
     builder.WebHost.UseUrls("http://*:5002");
-    if (app.Environment.IsDevelopment())
+    if (app.Environment.IsDevelopment()||app.Environment.IsProduction())
     {
         app.UseSwagger();
         app.UseSwaggerUI();

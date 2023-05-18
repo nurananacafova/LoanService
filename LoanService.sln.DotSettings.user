@@ -1,7 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=09991bf5_002D5bbc_002D4403_002Da52f_002D6e38230b81d5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ProvideLoan_SubscriberDoesNotExist_ThrowsException" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::363033EF-4AD3-4559-AB1A-A89E6A25698C::net7.0::LoanServiceUnit.Tests.System.TestLoanService.ProvideLoan_SubscriberDoesNotExist_ThrowsException&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::363033EF-4AD3-4559-AB1A-A89E6A25698C::net7.0::LoanServiceUnit.Tests.System.TestLoanService.ProvideLoan_ReturnsOK&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=afa96ba9_002D7289_002D4e89_002D8cb7_002D8c3d29b252e2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;LoanServiceUnit.Tests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

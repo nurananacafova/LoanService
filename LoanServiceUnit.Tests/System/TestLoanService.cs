@@ -150,7 +150,6 @@ public class TestLoanService
         };
         var newLoan = new ProvideLoanRequest()
         {
-            // id = 1,
             subscriberId = 1,
             Amount = 234,
             loan_type = "Simple Loan"
@@ -167,7 +166,7 @@ public class TestLoanService
 
         mockLoanServiceHelper
             .Setup(x => x.CreateLoan(subscriber, newLoan.Amount, newLoan.loan_type))
-            .Returns(dbMock.Object.Loans.OrderBy(x => x.id).LastOrDefault().id);
+            .Returns(1);
         mockHttpClientHelper.Setup(x => x.GetScoringResponse(newLoan)).ReturnsAsync("true");
         mockHttpClientHelper.Setup(x => x.GetSubscriber(newLoan.subscriberId)).ReturnsAsync(subscriber);
         mockLoanServiceHelper.Setup(x => x.SendResponse(mail, content)).ReturnsAsync(new StatusCodeResult(200));
@@ -176,60 +175,60 @@ public class TestLoanService
             mockLoanServiceHelper.Object);
 
         var result = await sut.ProvideLoan(newLoan);
-        // Assert.Equal(1, result);
+        Assert.Equal(1, result);
     }
 
 
-    // [Fact]
-    // public async Task ProvideLoan_SubscriberDoesNotExist_ThrowsException()
-    // {
-    //     string mail = "newmailfortests1@gmail.com";
-    //     string content = "Loan created";
-    //
-    //     var fixture = new Fixture().Customize(new AutoMoqCustomization());
-    //     var mockHttpClientHelper = fixture.Create<Mock<HttpClientHelper>>();
-    //     var loggerMock = new Mock<ILogger<LoanService.Services.LoanService>>();
-    //     var mockLoanServiceHelper = fixture.Create<Mock<LoanServiceHelper>>();
-    //     var dbMock = fixture.Create<Mock<LoanDb>>();
-    //
-    //     var request = LoanMockData.NewLoan();
-    //     mockLoanServiceHelper
-    //         .Setup(x => x.CreateLoan(LoanMockData.subscriberModel(), request.Amount, request.loan_type))
-    //         .Returns(request.id);
-    //     mockHttpClientHelper.Setup(x => x.GetScoringResponse(request)).ReturnsAsync("true");
-    //     mockHttpClientHelper.Setup(x => x.GetSubscriber(request.subscriberId)).ReturnsAsync((SubscriberModel)null);
-    //     mockLoanServiceHelper.Setup(x => x.SendResponse(mail, content)).ReturnsAsync(new StatusCodeResult(200));
-    //     var sut = new LoanService.Services.LoanService(loggerMock.Object, dbMock.Object, mockHttpClientHelper.Object,
-    //         mockLoanServiceHelper.Object);
-    //     var aa = await Assert.ThrowsAsync<InvalidConstraintException>(() => sut.ProvideLoan(request));
-    //     Assert.Equal("Subscriber not found", aa.Message);
-    // }
-    //
-    // [Fact]
-    // public async Task ProvideLoan_SuscriberNotEligible_ThrowsException()
-    // {
-    //     string mail = "newmailfortests1@gmail.com";
-    //     string content = "Loan created";
-    //     var fixture = new Fixture().Customize(new AutoMoqCustomization());
-    //     var mockHttpClientHelper = fixture.Create<Mock<HttpClientHelper>>();
-    //     var loggerMock = new Mock<ILogger<LoanService.Services.LoanService>>();
-    //     var mockLoanServiceHelper = fixture.Create<Mock<LoanServiceHelper>>();
-    //     var dbMock = fixture.Create<Mock<LoanDb>>();
-    //
-    //     var request = LoanMockData.NewLoan();
-    //
-    //     mockLoanServiceHelper
-    //         .Setup(x => x.CreateLoan(LoanMockData.subscriberModel(), request.Amount, request.loan_type))
-    //         .Returns(request.id);
-    //     mockHttpClientHelper.Setup(x => x.GetScoringResponse(request)).ReturnsAsync("false");
-    //     mockHttpClientHelper.Setup(x => x.GetSubscriber(request.subscriberId))
-    //         .ReturnsAsync(LoanMockData.subscriberModel);
-    //     mockLoanServiceHelper.Setup(x => x.SendResponse(mail, content)).ReturnsAsync(new StatusCodeResult(200));
-    //     var sut = new LoanService.Services.LoanService(loggerMock.Object, dbMock.Object, mockHttpClientHelper.Object,
-    //         mockLoanServiceHelper.Object);
-    //     var aa = await Assert.ThrowsAsync<InvalidOperationException>(() => sut.ProvideLoan(request));
-    //     Assert.Equal("Subscriber not eligible.", aa.Message);
-    // }
+    [Fact]
+    public async Task ProvideLoan_SubscriberDoesNotExist_ThrowsException()
+    {
+        string mail = "newmailfortests1@gmail.com";
+        string content = "Loan created";
+    
+        var fixture = new Fixture().Customize(new AutoMoqCustomization());
+        var mockHttpClientHelper = fixture.Create<Mock<HttpClientHelper>>();
+        var loggerMock = new Mock<ILogger<LoanService.Services.LoanService>>();
+        var mockLoanServiceHelper = fixture.Create<Mock<LoanServiceHelper>>();
+        var dbMock = fixture.Create<Mock<LoanDb>>();
+    
+        var request = LoanMockData.NewLoan();
+        mockLoanServiceHelper
+            .Setup(x => x.CreateLoan(LoanMockData.subscriberModel(), request.Amount, request.loan_type))
+            .Returns(1);
+        mockHttpClientHelper.Setup(x => x.GetScoringResponse(request)).ReturnsAsync("true");
+        mockHttpClientHelper.Setup(x => x.GetSubscriber(request.subscriberId)).ReturnsAsync((SubscriberModel)null);
+        mockLoanServiceHelper.Setup(x => x.SendResponse(mail, content)).ReturnsAsync(new StatusCodeResult(200));
+        var sut = new LoanService.Services.LoanService(loggerMock.Object, dbMock.Object, mockHttpClientHelper.Object,
+            mockLoanServiceHelper.Object);
+        var aa = await Assert.ThrowsAsync<InvalidConstraintException>(() => sut.ProvideLoan(request));
+        Assert.Equal("Subscriber not found", aa.Message);
+    }
+    
+    [Fact]
+    public async Task ProvideLoan_SuscriberNotEligible_ThrowsException()
+    {
+        string mail = "newmailfortests1@gmail.com";
+        string content = "Loan created";
+        var fixture = new Fixture().Customize(new AutoMoqCustomization());
+        var mockHttpClientHelper = fixture.Create<Mock<HttpClientHelper>>();
+        var loggerMock = new Mock<ILogger<LoanService.Services.LoanService>>();
+        var mockLoanServiceHelper = fixture.Create<Mock<LoanServiceHelper>>();
+        var dbMock = fixture.Create<Mock<LoanDb>>();
+    
+        var request = LoanMockData.NewLoan();
+    
+        mockLoanServiceHelper
+            .Setup(x => x.CreateLoan(LoanMockData.subscriberModel(), request.Amount, request.loan_type))
+            .Returns(1);
+        mockHttpClientHelper.Setup(x => x.GetScoringResponse(request)).ReturnsAsync("false");
+        mockHttpClientHelper.Setup(x => x.GetSubscriber(request.subscriberId))
+            .ReturnsAsync(LoanMockData.subscriberModel);
+        mockLoanServiceHelper.Setup(x => x.SendResponse(mail, content)).ReturnsAsync(new StatusCodeResult(200));
+        var sut = new LoanService.Services.LoanService(loggerMock.Object, dbMock.Object, mockHttpClientHelper.Object,
+            mockLoanServiceHelper.Object);
+        var aa = await Assert.ThrowsAsync<InvalidOperationException>(() => sut.ProvideLoan(request));
+        Assert.Equal("Subscriber not eligible.", aa.Message);
+    }
 
 
     [Fact]

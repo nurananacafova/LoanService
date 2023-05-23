@@ -75,8 +75,14 @@ public class LoanServiceHelper : ILoanServiceHelper
             if (loan != null)
             {
                 amount = subscriberAmount - requestAmount;
-
-                loan.amount = amount;
+                if (amount < 0)
+                {
+                    loan.amount = 0;
+                }
+                else
+                {
+                    loan.amount = amount;
+                }
 
                 _loanDb.SaveChanges();
                 // loanModel = _loanDb.Loans.OrderBy(x => x.id).LastOrDefault();
